@@ -1,0 +1,96 @@
+{
+    "scenarios": [
+        {
+            "NewCase": {
+                "steps":[
+                    {
+                        "step":"Greeting and Branding", 
+                        "script": "Thank you for calling Cisco, this is ____ speaking, may I have your name, please?"
+                    },
+                    {
+                        "step":"Ask for a Cisco ID", 
+                        "script": "Could you provide me your Cisco ID, please?"
+                    },
+                    {
+                        "step":"Determine if is a new case for technical assistance or hardware replacement", 
+                        "script": "Is this new case for technical assistance or hardware replacement?"
+                    },
+                    {
+                        "step":"Then, ask regarding the issue if is a hardware, software, or cloud issue", 
+                        "script": "Is this regarding hardware, software or cloud?"
+                    },
+                    {
+                        "step":"Ask for a Serial or Contract Number", 
+                        "script": "Could you provide me the serial number of the equipment or a contract number that covers you?"
+                    },
+                    {
+                        "step":"Once we have the Serial or Contract Number, search it on CCW-R and confirm the device", 
+                        "script": "N/A"
+                    },
+                    {
+                        "step":"Look for details about the issue and business impact", 
+                        "script": "Can you tell me more about the issue you are having/ Can I have the system version of the device?/ There's any business impact regarding this issue?"
+                    },
+                    {
+                        "step":"Ask for time and complete the issue description using SCM +, and if is needed search for the correct keywords in Topic(similar cases) or RDMT", 
+                        "script": "Just provide me with _ minutes to redact this problem and I will be right back with the finishing details"
+                    },
+                    {
+                        "step":"Check customer contact information", 
+                        "script": "Would you like the engineer to contact you through phone or email?/ May I have your email address?/ Your phone ends with ___ is that correct?"
+                    },
+                    {
+                        "step":"Provide the case information to the customer, severity, set expectations, offer the chat bot", 
+                        "script": "I made your case as severity _, just bare with me a moment while I finish creating your case/ The case number will be _, you will receive an email regarding the case creating, if you scroll down within you will learn about the new tool which is the chatbot"
+                    },
+                    {
+                        "step":"In case of severity 2 or 1, apply the warm transfer and scalation procedures", 
+                        "script": "I will procede to monitoring your case, and soon as an engineer is set up, I will be bringing updates to you every 5 minutes. I'm just going to put you in mute in the meantime because we have some background noise, so if you need me just call me."
+                    },
+                    {
+                        "step":"Proceed to end the call, remember branding, or just execute the warm transfer", 
+                        "script": "Thank you for calling Cisco have a great day/ Sorry, thank you for holding, I would like to tell you that we already have an engineer her-his name is _ I'm going to put you on the line with, thank you for calling Cisco"
+                    } 
+                ]
+            }
+        },
+        {
+            "ExistingCase": {
+                "steps":[
+                    {
+                        "step":"Greeting and Branding", 
+                        "script": "Thank you for calling Cisco, this is ____ speaking, may I have your name, please?"
+                    },
+                    {
+                        "step":"Ask for case number", 
+                        "script": "May I your service request number, please?"
+                    },
+                    {
+                        "step":"Check case information in Lightning", 
+                        "script": "Let me locate your case"
+                    },
+                    {
+                        "step":"Double check information related to security", 
+                        "script": "May I have your case title, please?/ What's your company name?"
+                    },
+                    {
+                        "step":"Ask for the customer request, related with the case", 
+                        "script": "Mister customer, what information or action from your case do you need?"
+                    },
+                    {
+                        "step":"Ask for time, to perform the procedure related with the request", 
+                        "script": "Just provide me with _ minutes/ to go ahead and reach out your engineer, to see if is able to receive your call/ perform the priority modification/ perform your requeue process"
+                    },
+                    {
+                        "step":"Proceed to end the call, remember branding, or just execute the warm transfer", 
+                        "script": "Thank you for calling Cisco have a great day/ Sorry, thank you for holding, I would like to tell you that we already have an engineer her-his name is _ I'm going to put you on the line with, thank you for calling Cisco"
+                    },
+                    {
+                        "step":"Extra step: HANDLE ANGRY CUSTOMER", 
+                        "script": "I just want to help you/ I just want to save time here, because they are going to ask you anyway"
+                    }
+                ]
+            }
+        }
+    ]
+}
