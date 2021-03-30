@@ -92,5 +92,19 @@
                 ]
             }
         }
+    ],
+    "templates":[
+        {
+            "ToCaseOwner": "Hi <b class='egname'>Name of the case owner</b>,I have <b class='cuname'>Customer name</b> on the other line with <b class='case'>SR#</b> and <b id='genre'>he/she</b> wants to speak with you in reference to <b id='info'>(relevant info.)</b> Are you available to take the call?"
+        },
+        {
+            "ToTeamLeader": "Hi <b class='tlname'>Name of the Team lead</b>, I have <b class='cuname'>Customer name</b> on the other line with <b class='case'>SR#</b>. I’ve been on hold for 5 minutes waiting for an Engineer. Do we have someone to take the case?"
+        },
+        {
+            "ToTeamManager": "Hi <b class='tmname'>Name of the Team Manager</b>, I have <b class='cuname'>Customer name</b> on the other line with <b class='case'>SR#</b>. I’ve been on hold for 10 minutes waiting for an Engineer. I have reached out to TL <b class='tlccid'>Cisco User ID of the Team Lead</b> but I haven’t received a response yet. Do we have someone to take the case?"
+        },
+        {
+            "ToDutyManager": ""
+        }
     ]
 }

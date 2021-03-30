@@ -27,6 +27,9 @@
                 <li class="nav-item">
                     <a class="nav-link white" onclick="formatExistingCase()" href="#">Existing Case</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link white" onclick="formatTemplate()" href="#">Templates</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -78,6 +81,103 @@
                 </tbody>
             </table>
         </div>
+    </div>
+
+    <div class="container" id="templateContent">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Customer name</label>
+                        <input type="text" class="form-control" id="inputcuname" placeholder="Customer name" autocomplete="false" onkeyup="changeCUName()">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Customer CCID</label>
+                        <input type="text" class="form-control" id="inputcuccid" placeholder="Customer CCID">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">Engineer name</label>
+                          <input type="text" class="form-control" id="inputegname" placeholder="Engineer name" autocomplete="false" onkeyup="changeEGName()">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">Engineer CCID</label>
+                          <input type="text" class="form-control" id="inputegccid" placeholder="Engineer CCID" autocomplete="false" onkeyup="changeEGCCID()">
+                        </div>
+                      </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Case Number</label>
+                      <input type="text" class="form-control" id="inputcase" placeholder="691085454" autocomplete="false" onkeyup="changeCase()">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">Team Leader name</label>
+                          <input type="text" class="form-control" id="inputtlname" placeholder="Team Leader name" autocomplete="false" onkeyup="changeTLName()">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">Team Leader CCID</label>
+                          <input type="text" class="form-control" id="inputtlccid" placeholder="Team Leader CCID" autocomplete="false" onkeyup="changeTLCCID()">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">Team Manager name</label>
+                          <input type="text" class="form-control" id="inputtmname" placeholder="Team Manager name" autocomplete="false" onkeyup="changeTMName()">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">Team Manager CCID</label>
+                          <input type="text" class="form-control" id="inputtmccid" placeholder="Team Manager CCID" autocomplete="false" onkeyup="changeTMCCID()">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">Duty Manager name</label>
+                          <input type="text" class="form-control" id="inputdmname" placeholder="Duty Manager name">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">Duty Manager CCID</label>
+                          <input type="text" class="form-control" id="inputdmccid" placeholder="Team Manager CCID">
+                        </div>
+                      </div>
+                  </form>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Transfer call to the engineer</h5>
+                      <p class="card-text" id="bodyTransferEngineer">
+                          
+                      </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Escalate to Team Leader</h5>
+                      <p class="card-text" id="bodyTransferTeamLeader">
+                          
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Escalate to Team Manager</h5>
+                      <p class="card-text" id="bodyTransferTeamManager">
+                          
+                      </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Escalate to Duty Manager</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
     </div>
 
     <footer class="primary_bg text-center text-lg-start">
